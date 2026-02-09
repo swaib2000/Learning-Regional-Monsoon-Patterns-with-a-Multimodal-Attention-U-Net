@@ -71,5 +71,43 @@ Depending on state and data availability, the dataset includes:
 
 ## 📂 Repository Structure (GitHub)
 
-This GitHub repository contains **supporting material only**:
+This GitHub repository contains **supporting material only**
+
+---
+
+### 🧪 How the Data Was Generated
+
+Each state dataset was generated using a dedicated Jupyter notebook (e.g., Assam.ipynb) following the same pipeline:
+
+Define the state boundary and spatial grid
+
+Query satellite and climate data (Google Earth Engine / ERA5)
+
+Export aligned raster layers at ~1 km resolution
+
+Generate precipitation labels
+
+Save raw artifacts (GeoTIFF / CSV)
+
+This ensures reproducibility and consistency across all states.
+
+---
+
+### 🧠 Intended Use
+
+This dataset is designed for:
+
+Climate AI research
+
+Multimodal and geospatial deep learning
+
+Precipitation classification and benchmarking
+
+Regional monsoon analysis over India
+
+---
+
+⚠️ The dataset is provided as raw geospatial artifacts. Users are expected to perform task-specific preprocessing such as tiling, normalization, and temporal aggregation.
+
+
 
